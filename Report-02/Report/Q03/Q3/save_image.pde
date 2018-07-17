@@ -1,9 +1,8 @@
 
-void save_face_to_file() 
+void save_face_to_file(String sss) 
 {
- // if(useROI)
- // {
-    String sss = " ";
+
+    
     
     if (f_key_pressed == 1) 
     {

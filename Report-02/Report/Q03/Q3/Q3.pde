@@ -79,10 +79,6 @@ int actRandomSeed;
 int saveFrame_sign = 0;
 
 PImage src;
-//OpenCV opencv;
-
-//int roiWidth = 112;
-//int roiHeight = 112;
 
 boolean useROI = false;
 
@@ -159,8 +155,7 @@ void draw()
     {
         image(originalImages.get(indexOfImage), 0, 0);
         find_face();
-        //find_blob_hair();
-        //find_blob_skin();
+       
 
   
         if(faces.length != 0)
@@ -181,20 +176,12 @@ void draw()
         //save famale data
         if(f_key_pressed == 1)
         {
-          save_face_to_file() ;
+          save_face_to_file("face" + indexOfImage) ;
           f_key_pressed = 0;
           //useROI = false;
           opencv.releaseROI();
         }
         
-        //save man data
-        if(m_key_pressed == 1)
-        {
-          save_face_to_file() ;
-          m_key_pressed = 0;
-          //useROI = false;
-          opencv.releaseROI();
-        }
         
         
         stroke(0, 255, 255);
