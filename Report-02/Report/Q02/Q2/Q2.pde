@@ -123,7 +123,7 @@ void find_face()
   stroke(255, 255, 0);
   strokeWeight(3);
   for (int i = 0; i < faces.length; i++) {
-    rect(faces[i].x, faces[i].y, faces[i].width, faces[i].height);
+   
   }
 }
 
@@ -173,19 +173,11 @@ void draw()
         
         opencv.setROI((int)mface.x, (int)mface.y, r, r);
         
-        //save famale data
-        if(f_key_pressed == 1)
-        {
-          save_face_to_file("face" + indexOfImage) ;
-          f_key_pressed = 0;
-          //useROI = false;
-          opencv.releaseROI();
-        }
-        
+      
         
         
         stroke(0, 255, 255);
         strokeWeight(2.0);
-        rect(mface.x, mface.y, r, r);
+       
     }
 }
