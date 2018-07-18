@@ -43,6 +43,7 @@ import gab.opencv.*;
 
 import gab.opencv.*;
 import java.awt.Rectangle;
+//import processing.opengl.*;
 import processing.pdf.*;
 import java.util.Calendar;
 import processing.video.*;
@@ -81,7 +82,7 @@ PImage src;
 
 boolean useROI = false;
 
-
+//////////////////////////////////////////////
 
 void loadImages(File selection)
 {
