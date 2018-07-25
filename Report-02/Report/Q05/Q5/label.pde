@@ -181,7 +181,4 @@ void labeling_create() {
       }
     }
   }
-  textSize(30);
-  fill(255, 127, 0);
-  text("[face"+imageNum+".jpg] LabelingData", img.width*2+50, 30);
 }

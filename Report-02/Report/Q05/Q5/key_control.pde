@@ -15,6 +15,6 @@ void keyPressed() {
         imageNum++;
       }
     }
-    changeImage("../data/face"+imageNum+".jpg");
+    changeImage(path + "/face"+imageNum+".png");
   }
 }

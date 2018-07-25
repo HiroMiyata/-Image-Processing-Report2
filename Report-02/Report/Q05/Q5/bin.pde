@@ -19,7 +19,5 @@ void bin_create() {
     }
   }
   image(img_b, img.width+30, 50);
-  textSize(30);
-  fill(255, 127, 0);
-  text("[face"+imageNum+".jpg] BinarizationData", img.width+30, 30);
+ 
 }
