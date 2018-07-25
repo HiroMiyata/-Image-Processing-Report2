@@ -17,7 +17,7 @@ void loadImages(File selection)
 
 }
 void setup() {
-  size(1700, 450);
+  size(1700, 600);
   path = "../extracted";
   selectFolder("写真のあるフォルダを選択してください","loadImages");
   changeImage(path + "/face0.png");
