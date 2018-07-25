@@ -4,6 +4,11 @@ int labels[];
 int threshold = 224;
 boolean labeling_area_draw = true;
 String path;
+int label = 0;
+int p_point;
+boolean leftUp =false;
+boolean up = false;
+boolean rightUp = false;
 void loadImages(File selection)
 {
     path = selection.getPath();
