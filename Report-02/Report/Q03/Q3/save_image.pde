@@ -14,8 +14,10 @@ void save_face_to_file(String sss)
     //PImage newImage = createImage(roiWidth, roiHeight,RGB);
     
     PImage newImage = createImage(int(r), int(r), RGB);
-    newImage = opencv.getSnapshot();//画像の切り取り
-    
+    for (int i = 0; i < faces.length; i++) {
+      rect(faces[i].x, faces[i].y, faces[i].width, faces[i].height);
+      newImage = opencv.getInput().get(faces[i].x, faces[i].y, faces[i].width, faces[i].height);//画像の切り取り
+    }  
     if (f_key_pressed == 1 || m_key_pressed == 1)
     {
       newImage.save(sss);
