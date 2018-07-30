@@ -2,7 +2,7 @@ PImage img, img_b, img_result;
 boolean b[];
 int labels[];
 int threshold = 224;
-boolean labeling_area_draw = true;
+boolean labeling_color_draw = true;
 String path;
 int label = 0;
 int p_point;
