@@ -14,7 +14,7 @@ void labeling_create() {
   //AllLine(1行目を除く)
   
   all_line();
-  if (labeling_color_draw) {
+  if (labeling_area_draw) {
     int labelSize = labels.length;  
     int randomRGB[][] = new int[labelSize][3]; 
     for (int i = 0; i < labelSize; i++) {

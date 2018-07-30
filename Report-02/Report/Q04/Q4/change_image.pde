@@ -9,5 +9,5 @@ void changeImage(String imageName) {
   bin_create();
   labeling_create();
   fill(0, 127, 255);
-  text("← or → Change Image!",30,img.height + 100);
+  text("← or → ",30,img.height + 100);
 }
